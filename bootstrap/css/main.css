@@ -1,0 +1,170 @@
+html{
+	scroll-behavior: smooth;
+}
+body{
+	
+}
+
+header{
+	height: 560px;
+	background-image: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), url('../../img/b1.jpg');
+	background-size: cover;
+	overflow: hidden;
+}
+
+header nav{
+	background: rgba(0,0,0,.2);
+}
+
+.title .row{
+	position: relative;
+	top: 380px;
+	font-family: VINA;
+}
+.title .row h2{
+	color: #89553c;
+}
+
+.bg1{
+	background-image: url('../../img/bg2.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.testimonial .jumbotron{
+	background: rgba(26,34,56,.9);
+}
+
+.testimonial h3{
+	color: #89553c;
+	font-family: VANI;
+	font-weight: 600;
+	font-size: 60px;
+}
+
+.hero{
+	height: 500px;
+	background: linear-gradient(rgba(255,255,255,.8),rgba(255,255,255,.8)), url(../../img/b2.jpg);
+	background-repeat: repeat; 
+	margin-top: -35px;
+}
+
+.contact{
+	background-image: url('../../img/bg2.jpg');
+	font-family: VINA;
+	background-size: cover;
+}
+
+.contact .bg2{
+	background: rgba(26,34,56,.9);
+}
+
+.contact input,.contact select,.contact textarea{
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom: 2px solid rgba(255,255,255,.5);
+}
+
+.contact .btn{
+	background: #89553c;
+}
+
+.about{
+	background-image: url('../../img/b2.jpg');
+	font-family: VINA;
+	background-size: cover;
+}
+
+
+.about .bg1{
+	background: rgba(255,255,255,.7);
+}
+
+
+.about .lines{
+	width: 1px;
+	height: 15px;
+	background: black;
+}
+
+.gallery h3{
+	color: #89553c;
+	font-family: VANI;
+	font-weight: 600;
+}
+
+
+.carousel img{
+	height: 610px;
+}
+
+
+footer .jumbotron{
+	background: rgb(26,34,56);
+}
+
+footer .row{
+	padding: 20px;
+}
+
+footer h5{
+	color: #89553c;
+}
+
+.copyright{
+	margin-top: -34px;
+}
+
+.copyright .jumbotron{
+	background: black;
+}
+
+.copyright a{
+	color: white !important;
+	text-decoration: none;
+	padding: 5px;
+}
+
+.img-hov{
+	position: relative;
+	transition: 1s;
+}
+
+.img-hov a{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	line-height: 350px;
+	font-size: 25px;
+	text-decoration: none;
+	font-weight: 600;
+	color: white;
+	font-family: VINA;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.img-hov a p{
+	transition: 1s;
+}
+
+.img-hov:hover a{
+	opacity: 1;
+	background: -webkit-linear-gradient(left , rgba(190,35,35,.7),rgba(35,190,71,.7));
+	background: -os-linear-gradient(left , rgba(190,35,35,.7),rgba(35,190,71,.7));
+	background: -ms-linear-gradient(left , rgba(190,35,35,.7),rgba(35,190,71,.7));
+}
+.img-hov:hover p{
+	transform: rotate(25deg);
+	letter-spacing: 2px;
+}
+
+@media screen and (max-width: 720px){
+	.about img.imag{
+		margin: auto !important;
+	}
+}
