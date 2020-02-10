@@ -4,19 +4,49 @@ $('.carousel').carousel({
   touch: true
 });
 
-$('.multi-item-carousel').on('slide.bs.carousel', function (e) {
-  let $e = $(e.relatedTarget),
-      itemsPerSlide = 3,
-      totalItems = $('.carousel-item', this).length,
-      $itemsContainer = $('.carousel-inner', this),
-      it = itemsPerSlide - (totalItems - $e.index());
-  if (it > 0) {
-    for (var i = 0; i < it; i++) {
-      $('.carousel-item', this).eq(e.direction == "left" ? i : 0).
-        // append slides to the end/beginning
-        appendTo($itemsContainer);
+/*
+    Carousel
+*/
+$('#carousel-example').on('slide.bs.carousel', function (e) {
+    /*
+        CC 2.0 License Iatek LLC 2018 - Attribution required
+    */
+    var $e = $(e.relatedTarget);
+    var idx = $e.index();
+    var itemsPerSlide = 5;
+    var totalItems = $('.carousel-item').length;
+ 
+    if (idx >= totalItems-(itemsPerSlide-1)) {
+        var it = itemsPerSlide - (totalItems - idx);
+        for (var i=0; i<it; i++) {
+            // append slides to end
+            if (e.direction=="left") {
+                $('.carousel-item').eq(i).appendTo('.carousel-inner');
+            }
+            else {
+                $('.carousel-item').eq(0).appendTo('.carousel-inner');
+            }
+        }
     }
-  }
 });
+
+
+
+// testimonial
+
+
+  $(document).ready(function(){
+            $("#testimonial-slider").owlCarousel({
+                items:2,
+                itemsDesktop:[1000,2],
+                itemsDesktopSmall:[990,2],
+                itemsTablet:[768,1],
+                pagination:true,
+                navigation:false,
+                navigationText:["",""],
+                slideSpeed:1000,
+                autoPlay:true
+            });
+        });
 
 
