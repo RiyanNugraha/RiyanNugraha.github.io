@@ -122,6 +122,14 @@ footer h5{
 	color: #89553c;
 }
 
+.lols{
+	height: 100%;
+}
+
+.lols .hero{
+	height: 100%;
+}
+
 .copyright{
 	margin-top: -34px;
 }
@@ -406,6 +414,7 @@ footer h5{
 	.testimonial{
 		padding: 20px;
 		text-align: center;
+		width: 80%;
 	}
 	.testimonial .pic{
 		display: block;
